@@ -2269,7 +2269,7 @@ html, body {
 }
 .invite .buttonHolder {
   position: absolute;
-  top: 143px;
+  top: 165px;
   left: 55px;
   width: 210px;
 }
@@ -2392,7 +2392,7 @@ html, body {
 .user .buttonHolder {
   position: absolute;
   text-align: center;
-  top: 150px;
+  top: 170px;
   width: 100%;
 }
 .user .btn {
