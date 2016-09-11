@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>GiveScores</string>
+	<key>Builder Version</key>
+	<string>11601.7.8</string>
+	<key>CFBundleDisplayName</key>
+	<string>GiveScores</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.givescores.givescores</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3.44</string>
+	<key>CFBundleVersion</key>
+	<string>1.3.42</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>checkCoupon</string>
+				<key>Identifier</key>
+				<string>chekCoupon</string>
+				<key>Title</key>
+				<string>Check coupons for this product</string>
+			</dict>
+		</array>
+		<key>Database Quota</key>
+		<integer>52428800</integer>
+		<key>Global Page</key>
+		<string>global.html</string>
+		<key>Popovers</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>index.html</string>
+				<key>Height</key>
+				<integer>220</integer>
+				<key>Identifier</key>
+				<string>popup</string>
+				<key>Width</key>
+				<integer>320</integer>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>giveScore</string>
+				<key>Image</key>
+				<string>images/Icon-32.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>Give Scores</string>
+				<key>Popover</key>
+				<string>popup</string>
+				<key>Tool Tip</key>
+				<string>Rate The Web</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>scripts/inject.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Rate the web!</string>
+	<key>DeveloperIdentifier</key>
+	<string>HHUC9P636K</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://givescores.com</string>
+</dict>
+</plist>
