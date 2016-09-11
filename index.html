@@ -260,11 +260,18 @@
         <img id="gr" class="flag" src="images/Greece.png">
     </div>
     <h1 class="tPopup">Popup settings:</h1>
-    <input type="radio" class="popupOption" name="popupOption" value="everyPage"><span class="tEvery"> Every page</span>
-    <input type="radio" class="popupOption" name="popupOption" value="random"><span class="tRandom"> Random</span>
-    <input type="radio" class="popupOption" name="popupOption" value="onClick"><span class="tOnClick"> On click</span>
-   <!--  <h1 class="tOnScreen">On screen duration:</h1>
-    <input type="text" size="1" maxlength="2" pattern="([0-9]|[0-9]" id="seconds"><span class="tSeconds"> seconds</span>--><br>
+    <table class="termTable">
+        <tr>
+            <td> <span class="tEvery"> Every page</span> </td>
+            <td> <span class="tRandom"> Random</span> </td>
+            <td><span class="tOnClick"> On click</span></td>
+        </tr>
+        <tr>
+            <td> <input type="radio" class="popupOption" name="popupOption" value="everyPage"></td>
+            <td><input type="radio" class="popupOption" name="popupOption" value="random"></td>
+            <td> <input type="radio" class="popupOption" name="popupOption" value="onClick"></td>
+        </tr>
+    </table>
     <button id="done" class="doneButton tBack">Back</button>
 
 

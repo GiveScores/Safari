@@ -503,6 +503,7 @@
     $(".tOnScreen").text(langs[lang].tOnScreen);
     $(".tSeconds").text(langs[lang].tSeconds);
     $(".tDone").text(langs[lang].tDone);
+    $(".tLogout").text(langs[lang].tLogout);
     $(".full[for=star5]").prop("title", langs[lang].s5);
     $(".half[for=star4half]").prop("title", langs[lang].s45);
     $(".full[for=star4]").prop("title", langs[lang].s4);
@@ -713,8 +714,8 @@
 
 
 function getActiveTabUrl () {
-  // return safari.application.activeBrowserWindow.activeTab.url;
-  return "http://google.com";
+  return safari.application.activeBrowserWindow.activeTab.url;
+  // return "http://google.com";
 }
 
 function openTabInSafari (url, title, sizeInfo) {

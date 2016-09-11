@@ -1,3496 +1,2745 @@
 @charset "UTF-8";
 @font-face {
-    font-family: FontAwesome;
-    src: url(../fonts/fontawesome-webfont.eot?v=4.6.1);
-    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.6.1) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.6.1) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.6.1) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular) format("svg");
-    font-weight: 400;
-    font-style: normal
+  font-family: FontAwesome;
+  src: url(../fonts/fontawesome-webfont.eot?v=4.6.1);
+  src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.6.1) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.6.1) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.6.1) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.6.1) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.6.1#fontawesomeregular) format("svg");
+  font-weight: 400;
+  font-style: normal
 }
-html, body{
-width: 320px;
-height: 220px;
+html, body {
+  width: 320px;
+  height: 220px;
 }
-
 .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
-
 .fa-lg {
-    font-size: 1.3333333333em;
-    line-height: .75em;
-    vertical-align: -15%
+  font-size: 1.3333333333em;
+  line-height: .75em;
+  vertical-align: -15%
 }
-
 .fa-2x {
-    font-size: 2em
+  font-size: 2em
 }
-
 .fa-3x {
-    font-size: 3em
+  font-size: 3em
 }
-
 .fa-4x {
-    font-size: 4em
+  font-size: 4em
 }
-
 .fa-5x {
-    font-size: 5em
+  font-size: 5em
 }
-
 .fa-fw {
-    width: 1.2857142857em;
-    text-align: center
+  width: 1.2857142857em;
+  text-align: center
 }
-
 .fa-ul {
-    padding-left: 0;
-    margin-left: 2.1428571429em;
-    list-style-type: none
+  padding-left: 0;
+  margin-left: 2.1428571429em;
+  list-style-type: none
 }
-
 .fa-ul > li {
-    position: relative
+  position: relative
 }
-
 .fa-li {
-    position: absolute;
-    left: -2.1428571429em;
-    width: 2.1428571429em;
-    top: .1428571429em;
-    text-align: center
+  position: absolute;
+  left: -2.1428571429em;
+  width: 2.1428571429em;
+  top: .1428571429em;
+  text-align: center
 }
-
 .fa-li.fa-lg {
-    left: -1.8571428571em
+  left: -1.8571428571em
 }
-
 .fa-border {
-    padding: .2em .25em .15em;
-    border: .08em solid #eee;
-    border-radius: .1em
+  padding: .2em .25em .15em;
+  border: .08em solid #eee;
+  border-radius: .1em
 }
-
 .fa-pull-left {
-    float: left
+  float: left
 }
-
 .fa-pull-right {
-    float: right
+  float: right
 }
-
 .fa.fa-pull-left {
-    margin-right: .3em
+  margin-right: .3em
 }
-
 .fa.fa-pull-right {
-    margin-left: .3em
+  margin-left: .3em
 }
-
 .pull-right {
-    float: right
+  float: right
 }
-
 .pull-left {
-    float: left
+  float: left
 }
-
 .fa.pull-left {
-    margin-right: .3em
+  margin-right: .3em
 }
-
 .fa.pull-right {
-    margin-left: .3em
+  margin-left: .3em
 }
-
 .fa-spin {
-    -webkit-animation: a 2s infinite linear;
-    animation: a 2s infinite linear
+  -webkit-animation: a 2s infinite linear;
+  animation: a 2s infinite linear
 }
-
 .fa-pulse {
-    -webkit-animation: a 1s infinite steps(8);
-    animation: a 1s infinite steps(8)
+  -webkit-animation: a 1s infinite steps(8);
+  animation: a 1s infinite steps(8)
 }
-
 @-webkit-keyframes a {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
 }
-
 @keyframes a {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
 }
-
 .fa-rotate-90 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
 }
-
 .fa-rotate-180 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
-
 .fa-rotate-270 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg)
 }
-
 .fa-flip-horizontal {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1)
 }
-
 .fa-flip-vertical {
-    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1)
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1)
 }
-
 :root .fa-flip-horizontal, :root .fa-flip-vertical, :root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270 {
-    -webkit-filter: none;
-    filter: none
+  -webkit-filter: none;
+  filter: none
 }
-
 .fa-stack {
-    position: relative;
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: middle
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle
 }
-
 .fa-stack-1x, .fa-stack-2x {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center
 }
-
 .fa-stack-1x {
-    line-height: inherit
+  line-height: inherit
 }
-
 .fa-stack-2x {
-    font-size: 2em
+  font-size: 2em
 }
-
 .fa-inverse {
-    color: #fff
+  color: #fff
 }
-
 .fa-glass:before {
-    content: ""
+  content: ""
 }
-
 .fa-music:before {
-    content: ""
+  content: ""
 }
-
 .fa-search:before {
-    content: ""
+  content: ""
 }
-
 .fa-envelope-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-heart:before {
-    content: ""
+  content: ""
 }
-
 .fa-star:before {
-    content: ""
+  content: ""
 }
-
 .fa-star-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-user:before {
-    content: ""
+  content: ""
 }
-
 .fa-film:before {
-    content: ""
+  content: ""
 }
-
 .fa-th-large:before {
-    content: ""
+  content: ""
 }
-
 .fa-th:before {
-    content: ""
+  content: ""
 }
-
 .fa-th-list:before {
-    content: ""
+  content: ""
 }
-
 .fa-check:before {
-    content: ""
+  content: ""
 }
-
 .fa-close:before, .fa-remove:before, .fa-times:before {
-    content: ""
+  content: ""
 }
-
 .fa-search-plus:before {
-    content: ""
+  content: ""
 }
-
 .fa-search-minus:before {
-    content: ""
+  content: ""
 }
-
 .fa-power-off:before {
-    content: ""
+  content: ""
 }
-
 .fa-signal:before {
-    content: ""
+  content: ""
 }
-
 .fa-cog:before, .fa-gear:before {
-    content: ""
+  content: ""
 }
-
 .fa-trash-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-home:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-clock-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-road:before {
-    content: ""
+  content: ""
 }
-
 .fa-download:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-o-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-o-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-inbox:before {
-    content: ""
+  content: ""
 }
-
 .fa-play-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-repeat:before, .fa-rotate-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-refresh:before {
-    content: ""
+  content: ""
 }
-
 .fa-list-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-lock:before {
-    content: ""
+  content: ""
 }
-
 .fa-flag:before {
-    content: ""
+  content: ""
 }
-
 .fa-headphones:before {
-    content: ""
+  content: ""
 }
-
 .fa-volume-off:before {
-    content: ""
+  content: ""
 }
-
 .fa-volume-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-volume-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-qrcode:before {
-    content: ""
+  content: ""
 }
-
 .fa-barcode:before {
-    content: ""
+  content: ""
 }
-
 .fa-tag:before {
-    content: ""
+  content: ""
 }
-
 .fa-tags:before {
-    content: ""
+  content: ""
 }
-
 .fa-book:before {
-    content: ""
+  content: ""
 }
-
 .fa-bookmark:before {
-    content: ""
+  content: ""
 }
-
 .fa-print:before {
-    content: ""
+  content: ""
 }
-
 .fa-camera:before {
-    content: ""
+  content: ""
 }
-
 .fa-font:before {
-    content: ""
+  content: ""
 }
-
 .fa-bold:before {
-    content: ""
+  content: ""
 }
-
 .fa-italic:before {
-    content: ""
+  content: ""
 }
-
 .fa-text-height:before {
-    content: ""
+  content: ""
 }
-
 .fa-text-width:before {
-    content: ""
+  content: ""
 }
-
 .fa-align-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-align-center:before {
-    content: ""
+  content: ""
 }
-
 .fa-align-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-align-justify:before {
-    content: ""
+  content: ""
 }
-
 .fa-list:before {
-    content: ""
+  content: ""
 }
-
 .fa-dedent:before, .fa-outdent:before {
-    content: ""
+  content: ""
 }
-
 .fa-indent:before {
-    content: ""
+  content: ""
 }
-
 .fa-video-camera:before {
-    content: ""
+  content: ""
 }
-
 .fa-image:before, .fa-photo:before, .fa-picture-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-pencil:before {
-    content: ""
+  content: ""
 }
-
 .fa-map-marker:before {
-    content: ""
+  content: ""
 }
-
 .fa-adjust:before {
-    content: ""
+  content: ""
 }
-
 .fa-tint:before {
-    content: ""
+  content: ""
 }
-
 .fa-edit:before, .fa-pencil-square-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-share-square-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-check-square-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrows:before {
-    content: ""
+  content: ""
 }
-
 .fa-step-backward:before {
-    content: ""
+  content: ""
 }
-
 .fa-fast-backward:before {
-    content: ""
+  content: ""
 }
-
 .fa-backward:before {
-    content: ""
+  content: ""
 }
-
 .fa-play:before {
-    content: ""
+  content: ""
 }
-
 .fa-pause:before {
-    content: ""
+  content: ""
 }
-
 .fa-stop:before {
-    content: ""
+  content: ""
 }
-
 .fa-forward:before {
-    content: ""
+  content: ""
 }
-
 .fa-fast-forward:before {
-    content: ""
+  content: ""
 }
-
 .fa-step-forward:before {
-    content: ""
+  content: ""
 }
-
 .fa-eject:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-plus-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-minus-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-times-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-check-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-question-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-info-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-crosshairs:before {
-    content: ""
+  content: ""
 }
-
 .fa-times-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-check-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-ban:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-mail-forward:before, .fa-share:before {
-    content: ""
+  content: ""
 }
-
 .fa-expand:before {
-    content: ""
+  content: ""
 }
-
 .fa-compress:before {
-    content: ""
+  content: ""
 }
-
 .fa-plus:before {
-    content: ""
+  content: ""
 }
-
 .fa-minus:before {
-    content: ""
+  content: ""
 }
-
 .fa-asterisk:before {
-    content: ""
+  content: ""
 }
-
 .fa-exclamation-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-gift:before {
-    content: ""
+  content: ""
 }
-
 .fa-leaf:before {
-    content: ""
+  content: ""
 }
-
 .fa-fire:before {
-    content: ""
+  content: ""
 }
-
 .fa-eye:before {
-    content: ""
+  content: ""
 }
-
 .fa-eye-slash:before {
-    content: ""
+  content: ""
 }
-
 .fa-exclamation-triangle:before, .fa-warning:before {
-    content: ""
+  content: ""
 }
-
 .fa-plane:before {
-    content: ""
+  content: ""
 }
-
 .fa-calendar:before {
-    content: ""
+  content: ""
 }
-
 .fa-random:before {
-    content: ""
+  content: ""
 }
-
 .fa-comment:before {
-    content: ""
+  content: ""
 }
-
 .fa-magnet:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-retweet:before {
-    content: ""
+  content: ""
 }
-
 .fa-shopping-cart:before {
-    content: ""
+  content: ""
 }
-
 .fa-folder:before {
-    content: ""
+  content: ""
 }
-
 .fa-folder-open:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrows-v:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrows-h:before {
-    content: ""
+  content: ""
 }
-
 .fa-bar-chart-o:before, .fa-bar-chart:before {
-    content: ""
+  content: ""
 }
-
 .fa-twitter-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-facebook-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-camera-retro:before {
-    content: ""
+  content: ""
 }
-
 .fa-key:before {
-    content: ""
+  content: ""
 }
-
 .fa-cogs:before, .fa-gears:before {
-    content: ""
+  content: ""
 }
-
 .fa-comments:before {
-    content: ""
+  content: ""
 }
-
 .fa-thumbs-o-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-thumbs-o-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-star-half:before {
-    content: ""
+  content: ""
 }
-
 .fa-heart-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-sign-out:before {
-    content: ""
+  content: ""
 }
-
 .fa-linkedin-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-thumb-tack:before {
-    content: ""
+  content: ""
 }
-
 .fa-external-link:before {
-    content: ""
+  content: ""
 }
-
 .fa-sign-in:before {
-    content: ""
+  content: ""
 }
-
 .fa-trophy:before {
-    content: ""
+  content: ""
 }
-
 .fa-github-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-upload:before {
-    content: ""
+  content: ""
 }
-
 .fa-lemon-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-phone:before {
-    content: ""
+  content: ""
 }
-
 .fa-square-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-bookmark-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-phone-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-twitter:before {
-    content: ""
+  content: ""
 }
-
 .fa-facebook-f:before, .fa-facebook:before {
-    content: ""
+  content: ""
 }
-
 .fa-github:before {
-    content: ""
+  content: ""
 }
-
 .fa-unlock:before {
-    content: ""
+  content: ""
 }
-
 .fa-credit-card:before {
-    content: ""
+  content: ""
 }
-
 .fa-feed:before, .fa-rss:before {
-    content: ""
+  content: ""
 }
-
 .fa-hdd-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-bullhorn:before {
-    content: ""
+  content: ""
 }
-
 .fa-bell:before {
-    content: ""
+  content: ""
 }
-
 .fa-certificate:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-o-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-o-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-o-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-o-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-globe:before {
-    content: ""
+  content: ""
 }
-
 .fa-wrench:before {
-    content: ""
+  content: ""
 }
-
 .fa-tasks:before {
-    content: ""
+  content: ""
 }
-
 .fa-filter:before {
-    content: ""
+  content: ""
 }
-
 .fa-briefcase:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrows-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-group:before, .fa-users:before {
-    content: ""
+  content: ""
 }
-
 .fa-chain:before, .fa-link:before {
-    content: ""
+  content: ""
 }
-
 .fa-cloud:before {
-    content: ""
+  content: ""
 }
-
 .fa-flask:before {
-    content: ""
+  content: ""
 }
-
 .fa-cut:before, .fa-scissors:before {
-    content: ""
+  content: ""
 }
-
 .fa-copy:before, .fa-files-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-paperclip:before {
-    content: ""
+  content: ""
 }
-
 .fa-floppy-o:before, .fa-save:before {
-    content: ""
+  content: ""
 }
-
 .fa-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-bars:before, .fa-navicon:before, .fa-reorder:before {
-    content: ""
+  content: ""
 }
-
 .fa-list-ul:before {
-    content: ""
+  content: ""
 }
-
 .fa-list-ol:before {
-    content: ""
+  content: ""
 }
-
 .fa-strikethrough:before {
-    content: ""
+  content: ""
 }
-
 .fa-underline:before {
-    content: ""
+  content: ""
 }
-
 .fa-table:before {
-    content: ""
+  content: ""
 }
-
 .fa-magic:before {
-    content: ""
+  content: ""
 }
-
 .fa-truck:before {
-    content: ""
+  content: ""
 }
-
 .fa-pinterest:before {
-    content: ""
+  content: ""
 }
-
 .fa-pinterest-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-google-plus-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-google-plus:before {
-    content: ""
+  content: ""
 }
-
 .fa-money:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-columns:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort:before, .fa-unsorted:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-desc:before, .fa-sort-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-asc:before, .fa-sort-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-envelope:before {
-    content: ""
+  content: ""
 }
-
 .fa-linkedin:before {
-    content: ""
+  content: ""
 }
-
 .fa-rotate-left:before, .fa-undo:before {
-    content: ""
+  content: ""
 }
-
 .fa-gavel:before, .fa-legal:before {
-    content: ""
+  content: ""
 }
-
 .fa-dashboard:before, .fa-tachometer:before {
-    content: ""
+  content: ""
 }
-
 .fa-comment-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-comments-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-bolt:before, .fa-flash:before {
-    content: ""
+  content: ""
 }
-
 .fa-sitemap:before {
-    content: ""
+  content: ""
 }
-
 .fa-umbrella:before {
-    content: ""
+  content: ""
 }
-
 .fa-clipboard:before, .fa-paste:before {
-    content: ""
+  content: ""
 }
-
 .fa-lightbulb-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-exchange:before {
-    content: ""
+  content: ""
 }
-
 .fa-cloud-download:before {
-    content: ""
+  content: ""
 }
-
 .fa-cloud-upload:before {
-    content: ""
+  content: ""
 }
-
 .fa-user-md:before {
-    content: ""
+  content: ""
 }
-
 .fa-stethoscope:before {
-    content: ""
+  content: ""
 }
-
 .fa-suitcase:before {
-    content: ""
+  content: ""
 }
-
 .fa-bell-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-coffee:before {
-    content: ""
+  content: ""
 }
-
 .fa-cutlery:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-text-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-building-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hospital-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-ambulance:before {
-    content: ""
+  content: ""
 }
-
 .fa-medkit:before {
-    content: ""
+  content: ""
 }
-
 .fa-fighter-jet:before {
-    content: ""
+  content: ""
 }
-
 .fa-beer:before {
-    content: ""
+  content: ""
 }
-
 .fa-h-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-plus-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-double-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-double-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-double-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-double-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-angle-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-desktop:before {
-    content: ""
+  content: ""
 }
-
 .fa-laptop:before {
-    content: ""
+  content: ""
 }
-
 .fa-tablet:before {
-    content: ""
+  content: ""
 }
-
 .fa-mobile-phone:before, .fa-mobile:before {
-    content: ""
+  content: ""
 }
-
 .fa-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-quote-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-quote-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-spinner:before {
-    content: ""
+  content: ""
 }
-
 .fa-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-mail-reply:before, .fa-reply:before {
-    content: ""
+  content: ""
 }
-
 .fa-github-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-folder-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-folder-open-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-smile-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-frown-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-meh-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-gamepad:before {
-    content: ""
+  content: ""
 }
-
 .fa-keyboard-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-flag-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-flag-checkered:before {
-    content: ""
+  content: ""
 }
-
 .fa-terminal:before {
-    content: ""
+  content: ""
 }
-
 .fa-code:before {
-    content: ""
+  content: ""
 }
-
 .fa-mail-reply-all:before, .fa-reply-all:before {
-    content: ""
+  content: ""
 }
-
 .fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-location-arrow:before {
-    content: ""
+  content: ""
 }
-
 .fa-crop:before {
-    content: ""
+  content: ""
 }
-
 .fa-code-fork:before {
-    content: ""
+  content: ""
 }
-
 .fa-chain-broken:before, .fa-unlink:before {
-    content: ""
+  content: ""
 }
-
 .fa-question:before {
-    content: ""
+  content: ""
 }
-
 .fa-info:before {
-    content: ""
+  content: ""
 }
-
 .fa-exclamation:before {
-    content: ""
+  content: ""
 }
-
 .fa-superscript:before {
-    content: ""
+  content: ""
 }
-
 .fa-subscript:before {
-    content: ""
+  content: ""
 }
-
 .fa-eraser:before {
-    content: ""
+  content: ""
 }
-
 .fa-puzzle-piece:before {
-    content: ""
+  content: ""
 }
-
 .fa-microphone:before {
-    content: ""
+  content: ""
 }
-
 .fa-microphone-slash:before {
-    content: ""
+  content: ""
 }
-
 .fa-shield:before {
-    content: ""
+  content: ""
 }
-
 .fa-calendar-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-fire-extinguisher:before {
-    content: ""
+  content: ""
 }
-
 .fa-rocket:before {
-    content: ""
+  content: ""
 }
-
 .fa-maxcdn:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-circle-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-circle-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-circle-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-chevron-circle-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-html5:before {
-    content: ""
+  content: ""
 }
-
 .fa-css3:before {
-    content: ""
+  content: ""
 }
-
 .fa-anchor:before {
-    content: ""
+  content: ""
 }
-
 .fa-unlock-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-bullseye:before {
-    content: ""
+  content: ""
 }
-
 .fa-ellipsis-h:before {
-    content: ""
+  content: ""
 }
-
 .fa-ellipsis-v:before {
-    content: ""
+  content: ""
 }
-
 .fa-rss-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-play-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-ticket:before {
-    content: ""
+  content: ""
 }
-
 .fa-minus-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-minus-square-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-level-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-level-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-check-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-pencil-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-external-link-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-share-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-compass:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-square-o-down:before, .fa-toggle-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-square-o-up:before, .fa-toggle-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-square-o-right:before, .fa-toggle-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-eur:before, .fa-euro:before {
-    content: ""
+  content: ""
 }
-
 .fa-gbp:before {
-    content: ""
+  content: ""
 }
-
 .fa-dollar:before, .fa-usd:before {
-    content: ""
+  content: ""
 }
-
 .fa-inr:before, .fa-rupee:before {
-    content: ""
+  content: ""
 }
-
 .fa-cny:before, .fa-jpy:before, .fa-rmb:before, .fa-yen:before {
-    content: ""
+  content: ""
 }
-
 .fa-rouble:before, .fa-rub:before, .fa-ruble:before {
-    content: ""
+  content: ""
 }
-
 .fa-krw:before, .fa-won:before {
-    content: ""
+  content: ""
 }
-
 .fa-bitcoin:before, .fa-btc:before {
-    content: ""
+  content: ""
 }
-
 .fa-file:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-text:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-alpha-asc:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-alpha-desc:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-amount-asc:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-amount-desc:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-numeric-asc:before {
-    content: ""
+  content: ""
 }
-
 .fa-sort-numeric-desc:before {
-    content: ""
+  content: ""
 }
-
 .fa-thumbs-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-thumbs-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-youtube-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-youtube:before {
-    content: ""
+  content: ""
 }
-
 .fa-xing:before {
-    content: ""
+  content: ""
 }
-
 .fa-xing-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-youtube-play:before {
-    content: ""
+  content: ""
 }
-
 .fa-dropbox:before {
-    content: ""
+  content: ""
 }
-
 .fa-stack-overflow:before {
-    content: ""
+  content: ""
 }
-
 .fa-instagram:before {
-    content: ""
+  content: ""
 }
-
 .fa-flickr:before {
-    content: ""
+  content: ""
 }
-
 .fa-adn:before {
-    content: ""
+  content: ""
 }
-
 .fa-bitbucket:before {
-    content: ""
+  content: ""
 }
-
 .fa-bitbucket-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-tumblr:before {
-    content: ""
+  content: ""
 }
-
 .fa-tumblr-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-long-arrow-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-long-arrow-up:before {
-    content: ""
+  content: ""
 }
-
 .fa-long-arrow-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-long-arrow-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-apple:before {
-    content: ""
+  content: ""
 }
-
 .fa-windows:before {
-    content: ""
+  content: ""
 }
-
 .fa-android:before {
-    content: ""
+  content: ""
 }
-
 .fa-linux:before {
-    content: ""
+  content: ""
 }
-
 .fa-dribbble:before {
-    content: ""
+  content: ""
 }
-
 .fa-skype:before {
-    content: ""
+  content: ""
 }
-
 .fa-foursquare:before {
-    content: ""
+  content: ""
 }
-
 .fa-trello:before {
-    content: ""
+  content: ""
 }
-
 .fa-female:before {
-    content: ""
+  content: ""
 }
-
 .fa-male:before {
-    content: ""
+  content: ""
 }
-
 .fa-gittip:before, .fa-gratipay:before {
-    content: ""
+  content: ""
 }
-
 .fa-sun-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-moon-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-archive:before {
-    content: ""
+  content: ""
 }
-
 .fa-bug:before {
-    content: ""
+  content: ""
 }
-
 .fa-vk:before {
-    content: ""
+  content: ""
 }
-
 .fa-weibo:before {
-    content: ""
+  content: ""
 }
-
 .fa-renren:before {
-    content: ""
+  content: ""
 }
-
 .fa-pagelines:before {
-    content: ""
+  content: ""
 }
-
 .fa-stack-exchange:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-o-right:before {
-    content: ""
+  content: ""
 }
-
 .fa-arrow-circle-o-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-caret-square-o-left:before, .fa-toggle-left:before {
-    content: ""
+  content: ""
 }
-
 .fa-dot-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-wheelchair:before {
-    content: ""
+  content: ""
 }
-
 .fa-vimeo-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-try:before, .fa-turkish-lira:before {
-    content: ""
+  content: ""
 }
-
 .fa-plus-square-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-space-shuttle:before {
-    content: ""
+  content: ""
 }
-
 .fa-slack:before {
-    content: ""
+  content: ""
 }
-
 .fa-envelope-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-wordpress:before {
-    content: ""
+  content: ""
 }
-
 .fa-openid:before {
-    content: ""
+  content: ""
 }
-
 .fa-bank:before, .fa-institution:before, .fa-university:before {
-    content: ""
+  content: ""
 }
-
 .fa-graduation-cap:before, .fa-mortar-board:before {
-    content: ""
+  content: ""
 }
-
 .fa-yahoo:before {
-    content: ""
+  content: ""
 }
-
 .fa-google:before {
-    content: ""
+  content: ""
 }
-
 .fa-reddit:before {
-    content: ""
+  content: ""
 }
-
 .fa-reddit-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-stumbleupon-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-stumbleupon:before {
-    content: ""
+  content: ""
 }
-
 .fa-delicious:before {
-    content: ""
+  content: ""
 }
-
 .fa-digg:before {
-    content: ""
+  content: ""
 }
-
 .fa-pied-piper:before {
-    content: ""
+  content: ""
 }
-
 .fa-pied-piper-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-drupal:before {
-    content: ""
+  content: ""
 }
-
 .fa-joomla:before {
-    content: ""
+  content: ""
 }
-
 .fa-language:before {
-    content: ""
+  content: ""
 }
-
 .fa-fax:before {
-    content: ""
+  content: ""
 }
-
 .fa-building:before {
-    content: ""
+  content: ""
 }
-
 .fa-child:before {
-    content: ""
+  content: ""
 }
-
 .fa-paw:before {
-    content: ""
+  content: ""
 }
-
 .fa-spoon:before {
-    content: ""
+  content: ""
 }
-
 .fa-cube:before {
-    content: ""
+  content: ""
 }
-
 .fa-cubes:before {
-    content: ""
+  content: ""
 }
-
 .fa-behance:before {
-    content: ""
+  content: ""
 }
-
 .fa-behance-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-steam:before {
-    content: ""
+  content: ""
 }
-
 .fa-steam-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-recycle:before {
-    content: ""
+  content: ""
 }
-
 .fa-automobile:before, .fa-car:before {
-    content: ""
+  content: ""
 }
-
 .fa-cab:before, .fa-taxi:before {
-    content: ""
+  content: ""
 }
-
 .fa-tree:before {
-    content: ""
+  content: ""
 }
-
 .fa-spotify:before {
-    content: ""
+  content: ""
 }
-
 .fa-deviantart:before {
-    content: ""
+  content: ""
 }
-
 .fa-soundcloud:before {
-    content: ""
+  content: ""
 }
-
 .fa-database:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-pdf-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-word-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-excel-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-powerpoint-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-image-o:before, .fa-file-photo-o:before, .fa-file-picture-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-archive-o:before, .fa-file-zip-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-audio-o:before, .fa-file-sound-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-movie-o:before, .fa-file-video-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-file-code-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-vine:before {
-    content: ""
+  content: ""
 }
-
 .fa-codepen:before {
-    content: ""
+  content: ""
 }
-
 .fa-jsfiddle:before {
-    content: ""
+  content: ""
 }
-
 .fa-life-bouy:before, .fa-life-buoy:before, .fa-life-ring:before, .fa-life-saver:before, .fa-support:before {
-    content: ""
+  content: ""
 }
-
 .fa-circle-o-notch:before {
-    content: ""
+  content: ""
 }
-
 .fa-ra:before, .fa-rebel:before {
-    content: ""
+  content: ""
 }
-
 .fa-empire:before, .fa-ge:before {
-    content: ""
+  content: ""
 }
-
 .fa-git-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-git:before {
-    content: ""
+  content: ""
 }
-
 .fa-hacker-news:before, .fa-y-combinator-square:before, .fa-yc-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-tencent-weibo:before {
-    content: ""
+  content: ""
 }
-
 .fa-qq:before {
-    content: ""
+  content: ""
 }
-
 .fa-wechat:before, .fa-weixin:before {
-    content: ""
+  content: ""
 }
-
 .fa-paper-plane:before, .fa-send:before {
-    content: ""
+  content: ""
 }
-
 .fa-paper-plane-o:before, .fa-send-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-history:before {
-    content: ""
+  content: ""
 }
-
 .fa-circle-thin:before {
-    content: ""
+  content: ""
 }
-
 .fa-header:before {
-    content: ""
+  content: ""
 }
-
 .fa-paragraph:before {
-    content: ""
+  content: ""
 }
-
 .fa-sliders:before {
-    content: ""
+  content: ""
 }
-
 .fa-share-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-share-alt-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-bomb:before {
-    content: ""
+  content: ""
 }
-
 .fa-futbol-o:before, .fa-soccer-ball-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-tty:before {
-    content: ""
+  content: ""
 }
-
 .fa-binoculars:before {
-    content: ""
+  content: ""
 }
-
 .fa-plug:before {
-    content: ""
+  content: ""
 }
-
 .fa-slideshare:before {
-    content: ""
+  content: ""
 }
-
 .fa-twitch:before {
-    content: ""
+  content: ""
 }
-
 .fa-yelp:before {
-    content: ""
+  content: ""
 }
-
 .fa-newspaper-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-wifi:before {
-    content: ""
+  content: ""
 }
-
 .fa-calculator:before {
-    content: ""
+  content: ""
 }
-
 .fa-paypal:before {
-    content: ""
+  content: ""
 }
-
 .fa-google-wallet:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-visa:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-mastercard:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-discover:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-amex:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-paypal:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-stripe:before {
-    content: ""
+  content: ""
 }
-
 .fa-bell-slash:before {
-    content: ""
+  content: ""
 }
-
 .fa-bell-slash-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-trash:before {
-    content: ""
+  content: ""
 }
-
 .fa-copyright:before {
-    content: ""
+  content: ""
 }
-
 .fa-at:before {
-    content: ""
+  content: ""
 }
-
 .fa-eyedropper:before {
-    content: ""
+  content: ""
 }
-
 .fa-paint-brush:before {
-    content: ""
+  content: ""
 }
-
 .fa-birthday-cake:before {
-    content: ""
+  content: ""
 }
-
 .fa-area-chart:before {
-    content: ""
+  content: ""
 }
-
 .fa-pie-chart:before {
-    content: ""
+  content: ""
 }
-
 .fa-line-chart:before {
-    content: ""
+  content: ""
 }
-
 .fa-lastfm:before {
-    content: ""
+  content: ""
 }
-
 .fa-lastfm-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-toggle-off:before {
-    content: ""
+  content: ""
 }
-
 .fa-toggle-on:before {
-    content: ""
+  content: ""
 }
-
 .fa-bicycle:before {
-    content: ""
+  content: ""
 }
-
 .fa-bus:before {
-    content: ""
+  content: ""
 }
-
 .fa-ioxhost:before {
-    content: ""
+  content: ""
 }
-
 .fa-angellist:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc:before {
-    content: ""
+  content: ""
 }
-
 .fa-ils:before, .fa-shekel:before, .fa-sheqel:before {
-    content: ""
+  content: ""
 }
-
 .fa-meanpath:before {
-    content: ""
+  content: ""
 }
-
 .fa-buysellads:before {
-    content: ""
+  content: ""
 }
-
 .fa-connectdevelop:before {
-    content: ""
+  content: ""
 }
-
 .fa-dashcube:before {
-    content: ""
+  content: ""
 }
-
 .fa-forumbee:before {
-    content: ""
+  content: ""
 }
-
 .fa-leanpub:before {
-    content: ""
+  content: ""
 }
-
 .fa-sellsy:before {
-    content: ""
+  content: ""
 }
-
 .fa-shirtsinbulk:before {
-    content: ""
+  content: ""
 }
-
 .fa-simplybuilt:before {
-    content: ""
+  content: ""
 }
-
 .fa-skyatlas:before {
-    content: ""
+  content: ""
 }
-
 .fa-cart-plus:before {
-    content: ""
+  content: ""
 }
-
 .fa-cart-arrow-down:before {
-    content: ""
+  content: ""
 }
-
 .fa-diamond:before {
-    content: ""
+  content: ""
 }
-
 .fa-ship:before {
-    content: ""
+  content: ""
 }
-
 .fa-user-secret:before {
-    content: ""
+  content: ""
 }
-
 .fa-motorcycle:before {
-    content: ""
+  content: ""
 }
-
 .fa-street-view:before {
-    content: ""
+  content: ""
 }
-
 .fa-heartbeat:before {
-    content: ""
+  content: ""
 }
-
 .fa-venus:before {
-    content: ""
+  content: ""
 }
-
 .fa-mars:before {
-    content: ""
+  content: ""
 }
-
 .fa-mercury:before {
-    content: ""
+  content: ""
 }
-
 .fa-intersex:before, .fa-transgender:before {
-    content: ""
+  content: ""
 }
-
 .fa-transgender-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-venus-double:before {
-    content: ""
+  content: ""
 }
-
 .fa-mars-double:before {
-    content: ""
+  content: ""
 }
-
 .fa-venus-mars:before {
-    content: ""
+  content: ""
 }
-
 .fa-mars-stroke:before {
-    content: ""
+  content: ""
 }
-
 .fa-mars-stroke-v:before {
-    content: ""
+  content: ""
 }
-
 .fa-mars-stroke-h:before {
-    content: ""
+  content: ""
 }
-
 .fa-neuter:before {
-    content: ""
+  content: ""
 }
-
 .fa-genderless:before {
-    content: ""
+  content: ""
 }
-
 .fa-facebook-official:before {
-    content: ""
+  content: ""
 }
-
 .fa-pinterest-p:before {
-    content: ""
+  content: ""
 }
-
 .fa-whatsapp:before {
-    content: ""
+  content: ""
 }
-
 .fa-server:before {
-    content: ""
+  content: ""
 }
-
 .fa-user-plus:before {
-    content: ""
+  content: ""
 }
-
 .fa-user-times:before {
-    content: ""
+  content: ""
 }
-
 .fa-bed:before, .fa-hotel:before {
-    content: ""
+  content: ""
 }
-
 .fa-viacoin:before {
-    content: ""
+  content: ""
 }
-
 .fa-train:before {
-    content: ""
+  content: ""
 }
-
 .fa-subway:before {
-    content: ""
+  content: ""
 }
-
 .fa-medium:before {
-    content: ""
+  content: ""
 }
-
 .fa-y-combinator:before, .fa-yc:before {
-    content: ""
+  content: ""
 }
-
 .fa-optin-monster:before {
-    content: ""
+  content: ""
 }
-
 .fa-opencart:before {
-    content: ""
+  content: ""
 }
-
 .fa-expeditedssl:before {
-    content: ""
+  content: ""
 }
-
 .fa-battery-4:before, .fa-battery-full:before {
-    content: ""
+  content: ""
 }
-
 .fa-battery-3:before, .fa-battery-three-quarters:before {
-    content: ""
+  content: ""
 }
-
 .fa-battery-2:before, .fa-battery-half:before {
-    content: ""
+  content: ""
 }
-
 .fa-battery-1:before, .fa-battery-quarter:before {
-    content: ""
+  content: ""
 }
-
 .fa-battery-0:before, .fa-battery-empty:before {
-    content: ""
+  content: ""
 }
-
 .fa-mouse-pointer:before {
-    content: ""
+  content: ""
 }
-
 .fa-i-cursor:before {
-    content: ""
+  content: ""
 }
-
 .fa-object-group:before {
-    content: ""
+  content: ""
 }
-
 .fa-object-ungroup:before {
-    content: ""
+  content: ""
 }
-
 .fa-sticky-note:before {
-    content: ""
+  content: ""
 }
-
 .fa-sticky-note-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-jcb:before {
-    content: ""
+  content: ""
 }
-
 .fa-cc-diners-club:before {
-    content: ""
+  content: ""
 }
-
 .fa-clone:before {
-    content: ""
+  content: ""
 }
-
 .fa-balance-scale:before {
-    content: ""
+  content: ""
 }
-
 .fa-hourglass-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hourglass-1:before, .fa-hourglass-start:before {
-    content: ""
+  content: ""
 }
-
 .fa-hourglass-2:before, .fa-hourglass-half:before {
-    content: ""
+  content: ""
 }
-
 .fa-hourglass-3:before, .fa-hourglass-end:before {
-    content: ""
+  content: ""
 }
-
 .fa-hourglass:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-grab-o:before, .fa-hand-rock-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-paper-o:before, .fa-hand-stop-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-scissors-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-lizard-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-spock-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-pointer-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-hand-peace-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-trademark:before {
-    content: ""
+  content: ""
 }
-
 .fa-registered:before {
-    content: ""
+  content: ""
 }
-
 .fa-creative-commons:before {
-    content: ""
+  content: ""
 }
-
 .fa-gg:before {
-    content: ""
+  content: ""
 }
-
 .fa-gg-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-tripadvisor:before {
-    content: ""
+  content: ""
 }
-
 .fa-odnoklassniki:before {
-    content: ""
+  content: ""
 }
-
 .fa-odnoklassniki-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-get-pocket:before {
-    content: ""
+  content: ""
 }
-
 .fa-wikipedia-w:before {
-    content: ""
+  content: ""
 }
-
 .fa-safari:before {
-    content: ""
+  content: ""
 }
-
 .fa-chrome:before {
-    content: ""
+  content: ""
 }
-
 .fa-firefox:before {
-    content: ""
+  content: ""
 }
-
 .fa-opera:before {
-    content: ""
+  content: ""
 }
-
 .fa-internet-explorer:before {
-    content: ""
+  content: ""
 }
-
 .fa-television:before, .fa-tv:before {
-    content: ""
+  content: ""
 }
-
 .fa-contao:before {
-    content: ""
+  content: ""
 }
-
 .fa-500px:before {
-    content: ""
+  content: ""
 }
-
 .fa-amazon:before {
-    content: ""
+  content: ""
 }
-
 .fa-calendar-plus-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-calendar-minus-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-calendar-times-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-calendar-check-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-industry:before {
-    content: ""
+  content: ""
 }
-
 .fa-map-pin:before {
-    content: ""
+  content: ""
 }
-
 .fa-map-signs:before {
-    content: ""
+  content: ""
 }
-
 .fa-map-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-map:before {
-    content: ""
+  content: ""
 }
-
 .fa-commenting:before {
-    content: ""
+  content: ""
 }
-
 .fa-commenting-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-houzz:before {
-    content: ""
+  content: ""
 }
-
 .fa-vimeo:before {
-    content: ""
+  content: ""
 }
-
 .fa-black-tie:before {
-    content: ""
+  content: ""
 }
-
 .fa-fonticons:before {
-    content: ""
+  content: ""
 }
-
 .fa-reddit-alien:before {
-    content: ""
+  content: ""
 }
-
 .fa-edge:before {
-    content: ""
+  content: ""
 }
-
 .fa-credit-card-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-codiepie:before {
-    content: ""
+  content: ""
 }
-
 .fa-modx:before {
-    content: ""
+  content: ""
 }
-
 .fa-fort-awesome:before {
-    content: ""
+  content: ""
 }
-
 .fa-usb:before {
-    content: ""
+  content: ""
 }
-
 .fa-product-hunt:before {
-    content: ""
+  content: ""
 }
-
 .fa-mixcloud:before {
-    content: ""
+  content: ""
 }
-
 .fa-scribd:before {
-    content: ""
+  content: ""
 }
-
 .fa-pause-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-pause-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-stop-circle:before {
-    content: ""
+  content: ""
 }
-
 .fa-stop-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-shopping-bag:before {
-    content: ""
+  content: ""
 }
-
 .fa-shopping-basket:before {
-    content: ""
+  content: ""
 }
-
 .fa-hashtag:before {
-    content: ""
+  content: ""
 }
-
 .fa-bluetooth:before {
-    content: ""
+  content: ""
 }
-
 .fa-bluetooth-b:before {
-    content: ""
+  content: ""
 }
-
 .fa-percent:before {
-    content: ""
+  content: ""
 }
-
 .fa-gitlab:before {
-    content: ""
+  content: ""
 }
-
 .fa-wpbeginner:before {
-    content: ""
+  content: ""
 }
-
 .fa-wpforms:before {
-    content: ""
+  content: ""
 }
-
 .fa-envira:before {
-    content: ""
+  content: ""
 }
-
 .fa-universal-access:before {
-    content: ""
+  content: ""
 }
-
 .fa-wheelchair-alt:before {
-    content: ""
+  content: ""
 }
-
 .fa-question-circle-o:before {
-    content: ""
+  content: ""
 }
-
 .fa-blind:before {
-    content: ""
+  content: ""
 }
-
 .fa-audio-description:before {
-    content: ""
+  content: ""
 }
-
 .fa-volume-control-phone:before {
-    content: ""
+  content: ""
 }
-
 .fa-braille:before {
-    content: ""
+  content: ""
 }
-
 .fa-assistive-listening-systems:before {
-    content: ""
+  content: ""
 }
-
 .fa-american-sign-language-interpreting:before, .fa-asl-interpreting:before {
-    content: ""
+  content: ""
 }
-
 .fa-deaf:before, .fa-deafness:before, .fa-hard-of-hearing:before {
-    content: ""
+  content: ""
 }
-
 .fa-glide:before {
-    content: ""
+  content: ""
 }
-
 .fa-glide-g:before {
-    content: ""
+  content: ""
 }
-
 .fa-sign-language:before, .fa-signing:before {
-    content: ""
+  content: ""
 }
-
 .fa-low-vision:before {
-    content: ""
+  content: ""
 }
-
 .fa-viadeo:before {
-    content: ""
+  content: ""
 }
-
 .fa-viadeo-square:before {
-    content: ""
+  content: ""
 }
-
 .fa-snapchat:before {
-    content: ""
+  content: ""
 }
-
 .fa-snapchat-ghost:before {
-    content: ""
+  content: ""
 }
-
 .fa-snapchat-square:before {
-    content: ""
+  content: ""
 }
-
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0
 }
-
 .sr-only-focusable:active, .sr-only-focusable:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto
 }
-
-html,body {
-    background: #ccc;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    text-align: center;
+html, body {
+  background: #ccc;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  text-align: center;
 }
-
 .container {
-    width: 320px;
-    text-align: center;
-    position: absolute
+  width: 320px;
+  text-align: center;
+  position: absolute
 }
-
 .container .btn {
-    -border-radius: 3;
-    border-radius: 0px;
-    color: #fff;
-    font-size: 14px;
-    background: #4db4aa;
-    padding: 7px 20px;
-    border: 0px solid #878a8a;
-    text-decoration: none
+  -border-radius: 3;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 14px;
+  background: #4db4aa;
+  padding: 7px 20px;
+  border: 0px solid #878a8a;
+  text-decoration: none
 }
-
-.inviteButton,.submitFriendsButton, .voteButton , .backFriendsButton{
-    border-radius: 3px;
-    color: #fff;
-    font-size: 14px;
-    background: #4db4aa;
-    padding: 7px 20px;
-    border: 0px solid #878a8a;
-    margin-top:10px;
-    text-decoration: none
+.inviteButton, .submitFriendsButton, .voteButton, .backFriendsButton {
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  background: #4db4aa;
+  padding: 7px 20px;
+  border: 0px solid #878a8a;
+  margin-top: 10px;
+  text-decoration: none
 }
-.backFriendsButton{
-    background: #737373;
-    float: left;
+.backFriendsButton {
+  background: #737373;
+  float: left;
 }
-.submitFriendsButton{
-    float: right;
+.submitFriendsButton {
+  float: right;
 }
-
-.showRegisterMenu, .notNowButton1{
-    -border-radius: 3;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 13px;
-    background: #999999;
-    padding: 7px 20px;
-    border: 0px solid black;
-    margin-top:14px;
+.showRegisterMenu, .notNowButton1 {
+  -border-radius: 3;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  background: #999999;
+  padding: 7px 20px;
+  border: 0px solid black;
+  margin-top: 14px;
 }
-
 .showRegisterMenu {
-    background: #737373;
-    float:left;
-    margin-left: 15%;
+  background: #737373;
+  float: left;
+  margin-left: 15%;
 }
-
 .notNowButton1 {
-    float:right;
-    margin-right: 15%;
+  float: right;
+  margin-right: 15%;
 }
-
-.register{
-    text-align: center;
+.register {
+  text-align: center;
 }
-
-
 .backButton {
-    border-radius: 3px;
-    color: #fff;
-    font-size: 13px;
-    background: #737373;
-    /*float:right;*/
-    margin-right:8%;
-    margin-top:9px;
-    padding: 7px 20px;
-    border: 0px solid black;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  background: #737373;
+  /*float:right;*/
+  margin-right: 8%;
+  margin-top: 9px;
+  padding: 7px 20px;
+  border: 0px solid black;
 }
-
-
 .logoutButton {
-    border-radius: 3px;
-    color: #fff;
-    /*float:left;*/
-    margin-left:8%;
-    margin-top:9px;
-    font-size: 13px;
-    background: #999999;
-    padding: 7px 20px;
-    border: 0px solid black;
+  border-radius: 3px;
+  color: #fff;
+  /*float:left;*/
+  margin-left: 8%;
+  margin-top: 9px;
+  font-size: 13px;
+  background: #999999;
+  padding: 7px 20px;
+  border: 0px solid black;
 }
-
 .container .btn:hover {
-    background: #48c4b8;
-    text-decoration: none
+  background: #48c4b8;
+  text-decoration: none
 }
-
 .container .btn:focus {
-    outline: 0 !important
+  outline: 0 !important
 }
-
-.mailDiv{
-    width:70%;
-    margin-left: 15%;
-    margin-right: 15%;
+.mailDiv {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-
-.mailDiv2{
-    width:66%;
-    margin-left: 17%;
-    margin-right: 17%;
+.mailDiv2 {
+  width: 66%;
+  margin-left: 17%;
+  margin-right: 17%;
 }
-
-.forgotmailDiv{
-    width:66%;
-    margin-left: 17%;
-    margin-right: 17%;
+.forgotmailDiv {
+  width: 66%;
+  margin-left: 17%;
+  margin-right: 17%;
 }
-
 #loginEmail, #registerEmail, #inviteMails, #oldPass, #forgottenPassMail {
-    height: 28px;
-    font-size: 14px;
-    width:100%;
-    font-style: italic
+  height: 28px;
+  font-size: 14px;
+  width: 100%;
+  font-style: italic
 }
-
-.passDiv{
-    width:70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 30px;
-    margin-top: 5px;
+.passDiv {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 30px;
+  margin-top: 5px;
 }
-
-
-.passDiv2{
-    width:66%;
-    margin-left: 17%;
-    margin-right: 17%;
-    margin-top: 5px;
+.passDiv2 {
+  width: 66%;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 5px;
 }
-
-#loginPass,#registerPass {
-    float:left;
-    height: 28px;
-    font-size: 14px;
-    width: 85%;
-    font-style: italic
+#loginPass, #registerPass {
+  float: left;
+  height: 28px;
+  font-size: 14px;
+  width: 85%;
+  font-style: italic
 }
-
-#newPass1{
-    height: 28px;
-    font-size: 14px;
-    width: 100%;
-    font-style: italic
+#newPass1 {
+  height: 28px;
+  font-size: 14px;
+  width: 100%;
+  font-style: italic
 }
-
-#newPass2{
-    height: 28px;
-    font-size: 14px;
-    width: 100%;
-    font-style: italic
+#newPass2 {
+  height: 28px;
+  font-size: 14px;
+  width: 100%;
+  font-style: italic
 }
-
-.loginButton, .registerButton{
-    -border-radius: 3;
-    border-radius: 0px;
-    float:left;
-    color: #fff;
-    font-size: 14px;
-    background: #4db4aa;
-    width:15%;
-    height:28px;
-    border: 0px solid #878a8a;
-    text-decoration: none
+.loginButton, .registerButton {
+  -border-radius: 3;
+  border-radius: 0px;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  background: #4db4aa;
+  width: 15%;
+  height: 28px;
+  border: 0px solid #878a8a;
+  text-decoration: none
 }
-
-
 .thanks h1 {
-    margin: 10px 0;
-    font-size: 14px
+  margin: 10px 0;
+  font-size: 14px
 }
-
 .thanks h3 {
-    margin-top: 30px;
-    font-size: 14px;
-    font-weight: 400
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 400
 }
-
-.forgot h3{
-    margin-top: 5px;
-    margin-bottom:4px;
-    font-size: 13px;
-    font-weight: 400
+.forgot h3 {
+  margin-top: 5px;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 400
 }
-
 .thanks .inputDiv {
-    position: absolute;
-    top: 85px;
-    left: 0;
-    height: 32px;
-    width: 100%
+  position: absolute;
+  top: 85px;
+  left: 0;
+  height: 32px;
+  width: 100%
 }
-
 .thanks .buttonHolder {
-    position: absolute;
-    top: 151px;
-    left: 51px;
-    width: 209px
+  position: absolute;
+  top: 151px;
+  left: 51px;
+  width: 209px
 }
-
 .invite h1, .thanks .btn {
-    font-size: 14px
+  font-size: 14px
 }
-
 .invite h1 {
-    margin: 10px 0;
-    font-weight: 500;
+  margin: 10px 0;
+  font-weight: 500;
 }
-
 .invite h3 {
-    margin-top: 30px;
-    font-size: 12px;
-    font-weight: normal;
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: normal;
 }
-
 .invite .inputDiv {
-    margin-left:15%;
-    margin-right:15%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-
 .invite .buttonHolder {
-    position: absolute;
-    top: 143px;
-    left: 51px;
-    width: 215px;
+  position: absolute;
+  top: 143px;
+  left: 51px;
+  width: 215px;
 }
-
 .invite .btn {
-    font-size: 14px;
+  font-size: 14px;
 }
-
-
 .settingsButton {
-    right: 10px;
+  float: right;
+  right: 10px;
 }
-
-.settingsButton,.userButton {
-    position: absolute;
-    font-size: 20px;
-    bottom: 10px;
-    color: #777
+.settingsButton, .userButton {
+  position: absolute;
+  font-size: 20px;
+  bottom: 8px;
+  color: #777
 }
-
 .userButton {
-    left: 10px
+  float: left;
+  left: 10px;
 }
-
 .vote a, .thanks a, .error a, .gs {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
-
-.vote h1{
-    margin: 18px 0;
-    font-size: 12px;
-    font-weight: 400
+.vote h1 {
+  margin: 18px 0;
+  font-size: 12px;
+  font-weight: 400
 }
-
-.loggedout h1, .register h1, .forgot h1
-{
-    margin: 15px 0;
-    font-size: 12px;
-    font-weight: 400;
-    font-weight: bold;
+.loggedout h1, .register h1, .forgot h1 {
+  margin: 15px 0;
+  font-size: 12px;
+  font-weight: 400;
+  font-weight: bold;
 }
-
-.changeDiv h1{
-    margin-top:15px;
-    font-size: 12px;
-    font-weight: 400;
-    font-weight: bold;
+.changeDiv h1 {
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  font-weight: bold;
 }
-
 .subheader {
-    font-size: 13px;
-    font-weight: 400
+  font-size: 13px;
+  font-weight: 400
 }
-
 .error2 {
-    font-size: 13px;
-    font-weight: 400;
-    color: red;
+  font-size: 13px;
+  font-weight: 400;
+  color: red;
 }
-
 .vote h2 {
-    margin-top: 15px;
-    font-size: 12px
+  margin-top: 15px;
+  font-size: 12px
 }
-
 .starsDiv {
-    width: 278px;
-    height: 40px;
-    margin-left: 26px
+  width: 278px;
+  height: 40px;
+  margin-left: 26px
 }
-
 .vote .rating > input {
-    display: none
+  display: none
 }
-
 .vote .rating > label:before {
-    margin-right: 20px;
-    font-size: 38px;
-    font-family: FontAwesome;
-    display: inline-block;
-    content: "\f005"
+  margin-right: 20px;
+  font-size: 38px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005"
 }
-
 .vote .rating > .half:before {
-    content: "\f089";
-    position: absolute
+  content: "\f089";
+  position: absolute
 }
-
 .vote .rating > label {
-    color: #eee;
-    float: right
+  color: #eee;
+  float: right
 }
-
 .vote .rating:not(:checked) > label:hover, .vote .rating:not(:checked) > label:hover ~ label, .vote .rating > input:checked ~ label {
-    color: #ffbc00
+  color: #ffbc00
 }
-
 .vote .rating > input:checked + label:hover, .vote .rating > input:checked ~ label:hover, .vote .rating > input:checked ~ label:hover ~ label, .vote .rating > label:hover ~ input:checked ~ label {
-    color: #c3a550
+  color: #c3a550
 }
-
 .vote .inputDiv {
-    position: absolute;
-    top: 85px;
-    left: 51px;
-    height: 32px
+  position: absolute;
+  top: 85px;
+  left: 51px;
+  height: 32px
 }
-
 .vote .buttonHolder {
-    position: absolute;
-    top: 149px;
-    left: 51px;
-    width: 209px
+  position: absolute;
+  bottom: 8px;
+  left: 51px;
+  width: 209px
 }
-
 .vote .btn {
-    font-size: 14px
+  font-size: 14px
 }
-
 .vote .registerButton {
-    float: right
+  float: right
 }
-
 .vote .notNowButton {
-    float: left
+  float: left
 }
-
 .user h1 {
-    margin: 18px 0;
-    font-size: 12px;
-    font-weight: 400
+  margin: 18px 0;
+  font-size: 12px;
+  font-weight: 400
 }
-
 .user h2 {
-    margin-top: 30px;
-    font-size: 12px;
+  margin-top: 30px;
+  font-size: 12px;
 }
-
 .user h3 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 16px
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 16px
 }
-
 .user .buttonHolder {
-    position: absolute;
-    top: 149px;
-    left: 51px;
-    width: 209px
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
 }
-
 .user .btn {
-    width: 90px;
-    font-size: 14px
+  width: 90px;
+  font-size: 14px
 }
-
 .doneButton {
-    border-radius: 3px;
-    color: #fff;
-    font-size: 14px;
-    background: #4db4aa;
-    padding: 7px 20px;
-    border: 0px solid #878a8a;
-    margin-top:18px;
-    text-decoration: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  background: #4db4aa;
+  padding: 7px 20px;
+  border: 0px solid #878a8a;
+  margin-top: 10px;
+  text-decoration: none;
 }
-
 .user .changeButton {
-    float: left
+  float: left
 }
-
 .user a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
-
 .feedback {
-    padding-top: 15px;
-    box-sizing: border-box;
-    ms-box-sizing: border-box;
-    webkit-box-sizing: border-box;
-    moz-box-sizing: border-box
+  padding-top: 15px;
+  box-sizing: border-box;
+  ms-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  moz-box-sizing: border-box
 }
-
 .feedback .rating > input {
-    display: none
+  display: none
 }
-
 .feedback .rating > label:before {
-    margin-right: 20px;
-    font-size: 38px;
-    font-family: FontAwesome;
-    display: inline-block;
-    content: "\f005"
+  margin-right: 20px;
+  font-size: 38px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005"
 }
-
 .feedback .rating > .half:before {
-    content: "\f089";
-    position: absolute
+  content: "\f089";
+  position: absolute
 }
-
 .feedback .rating > label {
-    color: #eee;
-    float: right
+  color: #eee;
+  float: right
 }
-
 .feedback .rating:not(:checked) > label:hover, .feedback .rating:not(:checked) > label:hover ~ label, .feedback .rating > input:checked ~ label {
-    color: #ffbc00
+  color: #ffbc00
 }
-
 .feedback .rating > input:checked + label:hover, .feedback .rating > input:checked ~ label:hover, .feedback .rating > input:checked ~ label:hover ~ label, .feedback .rating > label:hover ~ input:checked ~ label {
-    color: #c3a550
+  color: #c3a550
 }
-
 .feedback h1 {
-    margin: 15px 0;
-    font-size: 14px;
-    font-weight: 400
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: 400
 }
-
 .feedback h2 {
-    margin-top: 20px;
-    font-size: 12px;
-    display: inline;
-    margin-right: 10px
+  margin-top: 20px;
+  font-size: 12px;
+  display: inline;
+  margin-right: 10px
 }
-
 .feedback .userScore {
-    height: 45px;
-    margin-top: 12px;
-    padding:0 12px;
+  height: 45px;
+  text-align: center;
+  margin-top: 12px;
+  margin-right: 12px;
 }
-
 .feedback .overalScore {
-    display: inline
+  display: inline
 }
-
 .feedback .overalScore .fa-stack {
-    width: 16px;
-    height: 16px;
-    padding: 0
+  width: 16px;
+  height: 16px;
+  padding: 0
 }
-
 .feedback .overalScore .fa-stack .fa-star-half {
-    position: absolute;
-    font-size: 16px;
-    left: -3px;
-    line-height: 16px
+  position: absolute;
+  font-size: 16px;
+  left: -3px;
+  line-height: 16px
 }
-
 .feedback .overalScore .fa-stack .star-base {
-    color: #eee
+  color: #eee
 }
-
 .feedback .overalScore .fa-stack .fa-star {
-    margin: 0;
-    font-size: 16px;
-    line-height: 16px
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px
 }
-
 .feedback .quote {
-    margin-top: 10px;
-    padding: 0 15px;
-    font-size: 13px
+  margin-top: 10px;
+  padding: 0 15px;
+  font-size: 13px
 }
-
 .feedback .quote p {
-    padding: 0;
-    margin: 0;
-    font-style: italic
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  text-align: center;
 }
-
 .feedback .quote .quoteAuthor {
-    float: right;
-    font-weight: 700
+  float: right;
+  font-weight: 700
 }
-
 .feedback .buttonHolder {
-    clear: right
+  clear: right
 }
-
 .feedback .socialHolder {
-    clear: right;
-    font-size: 38px;
-    margin-top: 30px
+  clear: right;
+  font-size: 38px;
+  margin-top: 30px
 }
-
 .feedback .socialHolder .fa-facebook-square {
-    color: #3b5998
+  color: #3b5998
 }
-
 .feedback .socialHolder .social-icon {
-    margin: 0 5px
+  margin: 0 5px
 }
-
 .feedback .socialHolder .fa-twitter-square {
-    color: #00aced
+  color: #00aced
 }
-
 .feedback .btn {
-    font-size: 14px;
-    margin: 20px 0
+  font-size: 14px;
+  margin: 20px 0
 }
-
-.feedback, .intro, .invite, .loader, .settings, .thanks, .user, .vote, .error,.register, .loggedout, .changeDiv, .successDiv, .forgot {
-    display: none
+.feedback, .intro, .invite, .loader, .settings, .thanks, .user, .vote, .error, .register, .loggedout, .changeDiv, .successDiv, .forgot {
+  display: none
 }
-
 #settings {
-    display: none;
+  display: none;
 
 }
-
 #settings h1 {
-    margin: 18px 0;
-    font-size: 12px;
-    font-weight: bold;
+  margin: 18px 0;
+  font-size: 12px;
+  font-weight: bold;
 }
-
 .flag {
-    opacity: 0.3;
-    width:10%;
-    height:30px;
+  opacity: 0.3;
+  width: 10%;
+  height: 30px;
 }
-
 .flag:hover {
-    opacity: 1;
+  opacity: 1;
 }
-
 .flagActive {
-    opacity: 1;
+  opacity: 1;
 }
-
 .userButton {
-    float: left;
+  float: left;
 }
-
 .settingsButton {
-    float: right;
+  float: right;
 }
-
-
 .error h1 {
-    margin: 15px 0;
-    font-size: 12px;
-    font-weight: 400;
-    font-weight: bold;
+  margin: 15px 0;
+  font-size: 12px;
+  font-weight: 400;
+  font-weight: bold;
 }
-
 .error .error-text {
-    font-weight: bold;
-    font-size: 13px;
-    margin: 60px 10px;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 60px 10px;
 }
-
 .loader i {
-    margin-top: 75px
+  margin-top: 75px
 }
-
 .hero-unit {
-    margin: 50px auto 0;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px
+  margin: 50px auto 0;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px
 }
-
 .hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px
 }
-
-.flag{
-    padding-right: 15px;
-    padding-right: 15px;
+.flag {
+  padding-right: 15px;
+  padding-right: 15px;
 }
-
 ::-webkit-input-placeholder {
-    color: grey;
-    opacity: 0.4;
-    font-size:12px;
+  color: grey;
+  opacity: 0.4;
+  font-size: 12px;
 }
-
 a {
-    text-decoration: none;
-    color:#333;
-    outline:none;
-    border:none;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+  border: none;
 }
-
-#changePass{
-    text-decoration: none;
-    color:whitesmoke;
-    font-size:10px;
-    font-style: italic;
+#changePass {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 10px;
+  font-style: italic;
 }
-
-.forgotPass{
-    text-decoration: none;
-    color:whitesmoke;
-    font-size:10px;
-    font-style: italic;
-    margin-right:15%;
-    float:right;
+.forgotPass {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 10px;
+  font-style: italic;
+  margin-right: 15%;
+  float: right;
 }
-
-#backFromChange{
-    float:left;
-    margin-left:17%;
-    margin-top:12px;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 13px;
-    background: #999999;
-    padding: 7px 20px;
-    border: 0px solid black;
+#backFromChange {
+  float: left;
+  margin-left: 17%;
+  margin-top: 12px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  background: #999999;
+  padding: 7px 20px;
+  border: 0px solid black;
 }
+.backFromInvite {
+  float: left;
 
-#success{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    font-size: 13px;
+  margin-top: 12px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  background: #999999;
+  padding: 7px 20px;
+  border: 0px solid black;
 }
+.submitFriendsButton {
+  border-radius: 3px;
+  float: right;
 
-#changeError,#forgotError{
-    font-size: 13px;
-    font-weight: 400;
-    margin-top: 0px;
-    color: red;
+  color: #fff;
+  font-size: 13px;
+  background: #4db4aa;
+  padding: 7px 20px;
+  border: 0px solid #878a8a;
+  margin-top: 12px;
+  text-decoration: none
 }
-
-.changePassButton{
-    border-radius: 3px;
-    color: #fff;
-    font-size: 14px;
-    background: #4db4aa;
-    padding: 7px 20px;
-    margin-top:12px;
-    margin-right:17%;
-    border: 0px solid #878a8a;
-    text-decoration: none;
-    float:right;
+#success {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 13px;
 }
-
+#changeError, #forgotError {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0px;
+  color: red;
+}
+.changePassButton {
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  background: #4db4aa;
+  padding: 7px 20px;
+  margin-top: 12px;
+  margin-right: 17%;
+  border: 0px solid #878a8a;
+  text-decoration: none;
+  float: right;
+}
 #submitForgotenPassMail {
-    position: fixed;
-    bottom:15px;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 14px;
-    background: #4db4aa;
-    padding: 7px 20px;
-    right:17%;
-    border: 0px solid #878a8a;
-    text-decoration: none;
-    float:right;
+  position: fixed;
+  bottom: 15px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  background: #4db4aa;
+  padding: 7px 20px;
+  right: 17%;
+  border: 0px solid #878a8a;
+  text-decoration: none;
+  float: right;
 }
-
-#backFromForgot{
-    position: fixed;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 13px;
-    background: #999999;;
-    float:left;
-    bottom:15px;
-    left:17%;
-    padding: 7px 20px;
-    border: 0px solid black;
+#backFromForgot {
+  position: fixed;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  background: #999999;;
+  float: left;
+  bottom: 15px;
+  left: 17%;
+  padding: 7px 20px;
+  border: 0px solid black;
 }
-
-.forgotdiv{
-    width:70%;
-    margin-left: 15%;
-    margin-right: 15%;
+.forgotdiv {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-
-#sucSpanDiv{
-    margin-top:100px;
+#sucSpanDiv {
+  margin-top: 100px;
 }
-
-#btn2Div{
-    bottom:15px;
-    margin: 0 auto;
-    position: fixed;
-    clear:both;
-    text-align:center;
-    width:70%;
-    margin-left: 15%;
-    margin-right:15%;
+#btn2Div {
+  bottom: 15px;
+  margin: 0 auto;
+  position: fixed;
+  clear: both;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
-
 .notNowButton2 {
-    -border-radius: 3;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 13px;
-    background: #999999;
-    padding: 7px 20px;
-    border: 0px solid black;
+  -border-radius: 3;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  background: #999999;
+  padding: 7px 20px;
+  border: 0px solid black;
 }
-
-
-#languages{
-    margin-left: 15px;
+#languages {
+  margin-left: 15px;
 }
-.container span{
-    font-size: 12px;
-    font-weight: normal;
+.container span {
+  font-size: 12px;
+  font-weight: normal;
 }
-.tPopup{
-    margin-bottom: 14px !important;
+.tPopup {
+  margin-bottom: 14px !important;
 }
-.tChangePass{
-    margin-top: 5px;
-display: block;
+.tChangePass {
+  margin-top: 5px;
+  display: block;
+}
+#inviteMails{
+  width: 172px;
+}
+.termTable{
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.termTable td{
+  width: 33.3%;
 }
