@@ -2256,11 +2256,11 @@ html, body {
 }
 .invite h1 {
   margin: 10px 0;
-  font-weight: 500;
+  font-weight: 600;
 }
 .invite h3 {
   margin-top: 30px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
 }
 .invite .inputDiv {
@@ -2270,8 +2270,8 @@ html, body {
 .invite .buttonHolder {
   position: absolute;
   top: 143px;
-  left: 51px;
-  width: 215px;
+  left: 55px;
+  width: 210px;
 }
 .invite .btn {
   font-size: 14px;
@@ -2733,7 +2733,7 @@ a {
   display: block;
 }
 #inviteMails{
-  width: 172px;
+  width: 206px;
 }
 .termTable{
   width: 100%;
@@ -2741,5 +2741,5 @@ a {
   text-align: center;
 }
 .termTable td{
-  width: 33.3%;
+  width: 22.3%;
 }
