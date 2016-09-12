@@ -2362,9 +2362,9 @@ html, body {
 }
 .vote .buttonHolder {
   position: absolute;
-  bottom: 8px;
-  left: 51px;
-  width: 209px
+  bottom: 7px;
+  left: 57px;
+  width: 209px;
 }
 .vote .btn {
   font-size: 14px
@@ -2507,7 +2507,8 @@ html, body {
 .feedback .socialHolder {
   clear: right;
   font-size: 38px;
-  margin-top: 30px
+  margin-top: 30px;
+  padding-left: 10px;
 }
 .feedback .socialHolder .fa-facebook-square {
   color: #3b5998
@@ -2742,4 +2743,10 @@ a {
 }
 .termTable td{
   width: 22.3%;
+}
+.quoteText{
+  height: 45px;
+}
+.tInvite{
+  font-size: 14px!important;
 }
