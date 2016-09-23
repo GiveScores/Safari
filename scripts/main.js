@@ -576,7 +576,8 @@
       var userVote = localStorage.userVote;
       if(userVote) {
         $(".vote").siblings().hide();
-        $(".vote").show();
+        // $(".vote").show();
+        $(".feedback").show();
         var fullStarsNumber = Math.floor(userVote);
         var halfStarsNumber = (userVote - Math.floor(userVote) ) / 0.5;
 
@@ -584,7 +585,7 @@
         if(fullStarsNumber === 0) fullStarsNumber = '';
         if(halfStarsNumber === 0) halfStarsNumber = '';
         else halfStarsNumber = 'half';
-        $("#star" + fullStarsNumber + halfStarsNumber).prop('checked', true);
+        $("#fb_star" + fullStarsNumber + halfStarsNumber).prop('checked', true);
       } else {
         $(".vote").siblings().hide();
         $(".vote").show();
@@ -715,7 +716,7 @@
 
 function getActiveTabUrl () {
   return safari.application.activeBrowserWindow.activeTab.url;
-  // return "http://google.com";
+   // return "http://google.com";
 }
 
 function openTabInSafari (url, title, sizeInfo) {

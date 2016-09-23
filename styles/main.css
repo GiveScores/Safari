@@ -2507,7 +2507,7 @@ html, body {
 .feedback .socialHolder {
   clear: right;
   font-size: 38px;
-  margin-top: 30px;
+  margin-top: 25px;
   padding-left: 10px;
 }
 .feedback .socialHolder .fa-facebook-square {
@@ -2742,7 +2742,7 @@ a {
   text-align: center;
 }
 .termTable td{
-  width: 22.3%;
+  /*width: 22.3%;*/
 }
 .quoteText{
   height: 45px;
